@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/88b65648e5.js" crossorigin="anonymous"></script> 
-    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/88b65648e5.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
 </head>
 <body>
-
+    <!-- Navigation Bar and Search Section -->
     <section id="nav">
         <!-- Nav List to target everything  -->
         <div class="nav__list">
@@ -28,17 +28,20 @@
                 </li>
             </ul>
         </div>
-        <div class="nav__search">
+        <!-- Targets the Navigation title  -->
+        <div class="nav__heading">
             <div class="nav__title--wrapper">
                 <h2 class="nav__title">Browse From our List of Movies</h2>
             </div>
-            <div class="movie__searchbar">
-                
-            </div>
         </div>
-        
+        <!-- Target the navigation search bar  -->
+        <div class="navigation__search">
+            <input type="text" placeholder="Search for Movies here.." class="movie__searchbar--wrapper">
+            <figure class="searchbar__submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </figure>
+        </div>  
     </section>
-    
     
 </body>
 </html> 

@@ -8,7 +8,7 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul{
@@ -16,14 +16,22 @@ ul{
     
 }
 
-/* Nav Bar */
+.row{
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Navigation Bar */
 
 #nav{
-    /* background-color: aliceblue; */
+    background-color:black;
+    color: white;
+    /* padding: 40px; */
 }
 
 .nav__img{
     width: 150px;
+    padding-top: 16px;
 }
 
 .nav__list{
@@ -46,3 +54,35 @@ ul{
     margin-top: 40px;
     text-align: center;
 }
+
+.nav__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.movie__searchbar--wrapper{
+    position: absolute;
+    padding: 24px 108px;
+    border-radius: 8px;
+}
+
+.searchbar__submit{
+    position: relative;
+    top: 0;
+    left: 120px;
+}
+
+.fa-magnifying-glass{
+    color: black;
+}
+
+/* Movie List Results */
+
