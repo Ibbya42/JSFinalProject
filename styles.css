@@ -19,6 +19,7 @@ ul{
 .row{
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Navigation Bar */
@@ -84,5 +85,25 @@ ul{
     color: black;
 }
 
+#moviesSearch{
+    padding: 80px
+}
+
 /* Movie List Results */
 
+.movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.movie__img{
+    width: 100px;
+}
+
+.movie__card{
+    border: 2px solid black;
+    padding: 80px;
+    margin: 0 16px;
+}
