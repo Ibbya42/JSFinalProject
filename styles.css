@@ -18,7 +18,7 @@ ul{
 
 .row{
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -85,25 +85,37 @@ ul{
     color: black;
 }
 
-#moviesSearch{
-    padding: 80px
-}
+
 
 /* Movie List Results */
+
+#moviesSearch{
+    padding: 80px;
+}
+
 
 .movie{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    flex-wrap: wrap;
+    
+    
 }
 
 .movie__img{
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
+    
 }
 
 .movie__card{
-    border: 2px solid black;
-    padding: 80px;
-    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 120px ;
+    width:33.3%;
+    
 }
