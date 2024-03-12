@@ -93,12 +93,17 @@ ul{
     padding: 80px;
 }
 
-
-.movie{
+.Movie__List{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap
+}
+
+.movie{
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+   
 }
 
 .movie__img{
@@ -114,7 +119,5 @@ ul{
     align-items: center;
     border: 2px solid black;
     padding: 120px;
-    margin: 10px;
-    width: 25%;
-    
+    margin: 10px;    
 }
