@@ -23,20 +23,21 @@
 // }
 
 async function main(){
-    const movies = await fetch("https://jsonplaceholder.typicode.com/users");
-    const moviesData = await movies.json();
-    const movieListEL = document.querySelector('.Movie__List');
-    console.log(moviesData)
-    movieListEL.innerHTML = moviesData.
+    const todos = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const todosData = await todos.json();
+    const todosListEL = document.querySelector('.Movie__List');
+    console.log(todosData)
+    todosListEL.innerHTML = todosData.
     map(
-        (movie) =>
+        (todos) =>
     `<div class="movie">
     <div class="movie__card">
-    <p>Name: ${movie.name}</p>
+    <p>Todo Id: ${todos.id} </p>
+    <p class="todo__title">Todo Title: ${todos.title}</p>
     <figure>
     <img src="/assets/Nav__img.png" class="movie__img">
     </figure>
-    <p>Year: ${movie.phone} </p>
+    <p>Completed: ${todos.completed} </p>
     </div>
     </div>`
         ).join("")
@@ -44,3 +45,5 @@ async function main(){
 }
 
 main();
+
+

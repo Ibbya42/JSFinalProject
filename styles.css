@@ -108,7 +108,7 @@ ul{
 
 .movie__img{
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
     
 }
 
@@ -118,6 +118,15 @@ ul{
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    text-align: center;
     padding: 120px;
     margin: 10px;    
+  
+}
+
+.todo__title{
+    width: 100%;
+    font-size: 12px;
+    min-width: 700px;
+   
 }

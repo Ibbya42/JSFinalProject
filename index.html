@@ -21,7 +21,7 @@
                     <a href="#">Home Page</a>
                 </li>
                 <li class="nav__link--list">
-                    <a href="#">Movie Search</a>
+                    <a href="#">Todo Search</a>
                 </li>
                 <li class="nav__link--list">
                     <a href="#">Contact</a>
@@ -31,12 +31,13 @@
         <!-- Targets the Navigation title  -->
         <div class="nav__heading">
             <div class="nav__title--wrapper">
-                <h2 class="nav__title">Browse From our List of Movies</h2>
+                <h2 class="nav__title">Browse From our List of Todos</h2>
             </div>
         </div>
         <!-- Target the navigation search bar  -->
         <div class="navigation__search">
-            <input type="text" placeholder="Search for Movies here.." class="movie__searchbar--wrapper">
+            <input type="text" placeholder="Search for options here.." class="movie__searchbar--wrapper"
+            onchange="">
             <figure class="searchbar__submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </figure>
@@ -45,14 +46,22 @@
     
     <section id="moviesSearch">
         <div class="row">
+            <select id="filter">
+                <option value="">FILTER</option>
+                <option value="True">Completed - True</option>
+                <option value="False">Completed - False</option>
+                <option value="Low_to_High">ID, Low to High</option>
+                <option value="High_to_Low">ID, High to Low</option>
+                
+            </select>
             <div class="Movie__List">
-                <div class="movie">
+                <!-- <div class="movie">
                     <div class="movie__card">
-                        <p>Title:</p>
+                        <p>Todo Title:</p>
                         <figure>
                             <img src="/assets/Nav__img.png" class="movie__img">
                         </figure>
-                        <p>Year: </p>
+                        <p>Completed: </p> -->
                     </div>
                 </div>
             </div>
