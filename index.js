@@ -26,7 +26,7 @@ async function main(){
     const todos = await fetch("https://jsonplaceholder.typicode.com/todos");
     const todosData = await todos.json();
     const todosListEL = document.querySelector('.Movie__List');
-    console.log(todosData)
+    // console.log(todosData)
     todosListEL.innerHTML = todosData.
     map(
         (todos) =>
@@ -45,5 +45,3 @@ async function main(){
 }
 
 main();
-
-
